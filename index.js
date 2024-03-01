@@ -5,6 +5,8 @@ articles.forEach((article) => {
         const fullImage = article.querySelector("img");
         const fullRoute = fullImage.getAttribute("src");
         fullImage.src = fullRoute;
+        window.open(fullRoute);
+
     });
 });
 
